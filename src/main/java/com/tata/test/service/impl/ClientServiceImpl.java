@@ -14,7 +14,6 @@ import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 import java.util.Map;
-import java.util.Objects;
 import java.util.Optional;
 
 import static com.tata.test.utils.utils.getNonNullFields;
@@ -43,7 +42,7 @@ public class ClientServiceImpl implements ClientService {
 
         ModelMapper modelMapper = new ModelMapper();
 
-        Optional<Clients> clients = clientRepository.findById(id);
+        Optional<Clients> clients = clientRepository.findByIdAndStatusIsTrue(id);
 
         if (clients.isEmpty()) {
             throw new RuntimeException("Client not found");

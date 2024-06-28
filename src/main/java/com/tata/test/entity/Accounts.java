@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -26,5 +28,13 @@ public class Accounts {
     private Double initialBalance;
 
     @Column(name = "estado", nullable = false, columnDefinition = "boolean default true")
-    private String status;
+    private Boolean status = true;
+
+    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Transactions> transactions;
+
+    @ManyToOne
+    @JoinColumn(name = "client_id", nullable = false)
+    private Clients client;
+
 }

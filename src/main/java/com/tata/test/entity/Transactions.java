@@ -30,4 +30,8 @@ public class Transactions {
 
     @Column(name = "saldo")
     private BigDecimal balance;
+
+    @ManyToOne
+    @JoinColumn(name = "cuenta_id", nullable = false)
+    private Accounts account;
 }
