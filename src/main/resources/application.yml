@@ -1,0 +1,15 @@
+server:
+  port: 8087
+spring:
+  datasource:
+    password: ranty2023
+    url: jdbc:postgresql://localhost:5432/tata
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
