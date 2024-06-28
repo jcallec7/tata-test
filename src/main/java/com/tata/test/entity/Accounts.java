@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -25,7 +26,7 @@ public class Accounts {
     private String accountType;
 
     @Column(name = "saldo_inicial")
-    private Double initialBalance;
+    private BigDecimal initialBalance;
 
     @Column(name = "estado", nullable = false, columnDefinition = "boolean default true")
     private Boolean status = true;

@@ -23,10 +23,10 @@ public class Transactions {
     private LocalDateTime date;
 
     @Column(name = "tipo_movimiento")
-    private String movementType;
+    private String transactionType;
 
     @Column(name = "valor")
-    private BigDecimal value;
+    private BigDecimal amount;
 
     @Column(name = "saldo")
     private BigDecimal balance;

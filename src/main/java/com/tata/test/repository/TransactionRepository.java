@@ -1,4 +1,7 @@
 package com.tata.test.repository;
 
-public interface TransactionRepository {
+import com.tata.test.entity.Transactions;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TransactionRepository extends JpaRepository<Transactions, Long> {
 }

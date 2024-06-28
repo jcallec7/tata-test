@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 public enum ResponseDataEnum {
 
     SUCCESS("Success", "200", HttpStatus.OK),
-    FAILURE("Not found", "404", HttpStatus.NOT_FOUND);
+    NOT_FOUND("Not found", "404", HttpStatus.NOT_FOUND),
+    INSUFFICIENT_FUNDS("Saldo insuficiente", "400", HttpStatus.BAD_REQUEST);
 
     private final String message;
     private final String code;
