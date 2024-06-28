@@ -5,11 +5,12 @@ import com.tata.test.transactions.dto.SaveTransactionDto;
 import com.tata.test.transactions.service.TransactionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("api/movimientos")
@@ -23,6 +24,13 @@ public class TransactionController {
 
         return ResponseEntity.ok(transactionService.registerTransaction(saveTransactionDto));
 
+    }
+
+    @GetMapping("/reportes")
+    public ResponseEntity<?> getReport(@RequestParam(name = "FechaInicial") @DateTimeFormat LocalDate startDate,
+                                       @RequestParam(name = "FechaFinal") @DateTimeFormat LocalDate endDate){
+
+        return ResponseEntity.ok(transactionService.getReport(startDate,endDate));
     }
 
 }
