@@ -1,9 +1,9 @@
-package com.tata.test.controller;
+package com.tata.test.clients.controller;
 
-import com.tata.test.dto.ClientDto;
+import com.tata.test.clients.dto.ClientDto;
 import com.tata.test.dto.ResponseDataDto;
-import com.tata.test.dto.SaveClientDto;
-import com.tata.test.service.ClientService;
+import com.tata.test.clients.dto.SaveClientDto;
+import com.tata.test.clients.service.ClientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

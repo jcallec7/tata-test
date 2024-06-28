@@ -1,9 +1,8 @@
-package com.tata.test.controller;
+package com.tata.test.transactions.controller;
 
 import com.tata.test.dto.ResponseDataDto;
-import com.tata.test.dto.SaveAccountDto;
-import com.tata.test.dto.SaveTransactionDto;
-import com.tata.test.service.TransactionService;
+import com.tata.test.transactions.dto.SaveTransactionDto;
+import com.tata.test.transactions.service.TransactionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

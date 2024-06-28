@@ -1,4 +1,4 @@
-package com.tata.test.dto;
+package com.tata.test.clients.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;

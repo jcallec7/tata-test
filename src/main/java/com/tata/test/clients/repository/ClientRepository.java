@@ -1,6 +1,6 @@
-package com.tata.test.repository;
+package com.tata.test.clients.repository;
 
-import com.tata.test.entity.Clients;
+import com.tata.test.clients.entity.Clients;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

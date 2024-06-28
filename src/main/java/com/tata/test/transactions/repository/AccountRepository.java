@@ -1,6 +1,6 @@
-package com.tata.test.repository;
+package com.tata.test.transactions.repository;
 
-import com.tata.test.entity.Accounts;
+import com.tata.test.transactions.entity.Accounts;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,5 +1,6 @@
-package com.tata.test.entity;
+package com.tata.test.clients.entity;
 
+import com.tata.test.transactions.entity.Accounts;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

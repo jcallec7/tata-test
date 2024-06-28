@@ -1,4 +1,4 @@
-package com.tata.test.dto;
+package com.tata.test.clients.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

@@ -1,12 +1,14 @@
-package com.tata.test.service.impl;
+package com.tata.test.transactions.service.impl;
 
-import com.tata.test.dto.*;
-import com.tata.test.entity.Accounts;
-import com.tata.test.entity.Clients;
+import com.tata.test.transactions.dto.SaveAccountDto;
+import com.tata.test.transactions.entity.Accounts;
+import com.tata.test.clients.entity.Clients;
 import com.tata.test.enums.ResponseDataEnum;
-import com.tata.test.repository.AccountRepository;
-import com.tata.test.repository.ClientRepository;
-import com.tata.test.service.AccountService;
+import com.tata.test.transactions.repository.AccountRepository;
+import com.tata.test.clients.repository.ClientRepository;
+import com.tata.test.transactions.service.AccountService;
+import com.tata.test.transactions.dto.AccountDto;
+import com.tata.test.dto.ResponseDataDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

@@ -1,12 +1,13 @@
-package com.tata.test.service.impl;
+package com.tata.test.clients.service.impl;
 
-import com.tata.test.dto.ClientDto;
+import com.tata.test.clients.dto.ClientDto;
 import com.tata.test.dto.ResponseDataDto;
-import com.tata.test.dto.SaveClientDto;
-import com.tata.test.entity.Clients;
+import com.tata.test.clients.dto.SaveClientDto;
+import com.tata.test.clients.entity.Clients;
 import com.tata.test.enums.ResponseDataEnum;
-import com.tata.test.repository.ClientRepository;
-import com.tata.test.service.ClientService;
+import com.tata.test.clients.repository.ClientRepository;
+import com.tata.test.clients.service.ClientService;
+import com.tata.test.utils.utils;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -15,8 +16,6 @@ import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.Optional;
-
-import static com.tata.test.utils.utils.getNonNullFields;
 
 @Service
 @RequiredArgsConstructor
@@ -60,7 +59,7 @@ public class ClientServiceImpl implements ClientService {
             throw new RuntimeException("Client not found");
         }
 
-        Map<String, Object> nonNullFields = getNonNullFields(updateClientDto);
+        Map<String, Object> nonNullFields = utils.getNonNullFields(updateClientDto);
 
         for (Map.Entry<String, Object> entry : nonNullFields.entrySet()) {
             String key = entry.getKey();

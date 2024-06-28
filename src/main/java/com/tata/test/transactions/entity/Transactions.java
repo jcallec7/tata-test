@@ -1,4 +1,4 @@
-package com.tata.test.entity;
+package com.tata.test.transactions.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

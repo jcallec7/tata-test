@@ -1,7 +1,6 @@
-package com.tata.test.dto;
+package com.tata.test.transactions.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jakarta.persistence.Column;
 import lombok.*;
 
 @Getter

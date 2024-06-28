@@ -1,7 +1,7 @@
-package com.tata.test.service;
+package com.tata.test.transactions.service;
 
 import com.tata.test.dto.ResponseDataDto;
-import com.tata.test.dto.SaveTransactionDto;
+import com.tata.test.transactions.dto.SaveTransactionDto;
 
 public interface TransactionService {
 

@@ -1,4 +1,4 @@
-package com.tata.test.dto;
+package com.tata.test.transactions.dto;
 
 import lombok.Getter;
 import lombok.Setter;

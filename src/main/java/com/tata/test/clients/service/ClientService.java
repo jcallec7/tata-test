@@ -1,8 +1,8 @@
-package com.tata.test.service;
+package com.tata.test.clients.service;
 
-import com.tata.test.dto.ClientDto;
+import com.tata.test.clients.dto.ClientDto;
 import com.tata.test.dto.ResponseDataDto;
-import com.tata.test.dto.SaveClientDto;
+import com.tata.test.clients.dto.SaveClientDto;
 
 public interface ClientService {
 
