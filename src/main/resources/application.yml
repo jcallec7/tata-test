@@ -1,15 +1,12 @@
 server:
-  port: 8087
+  port: 7071
 spring:
   datasource:
-    password: ranty2023
-    url: jdbc:postgresql://localhost:5432/tata
+    password: j0s3st3b2nCC
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: create-drop

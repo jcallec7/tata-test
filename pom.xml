@@ -8,11 +8,11 @@
         <version>3.3.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tata.test</groupId>
-    <artifactId>tata</artifactId>
+    <groupId>com.transaction.dev</groupId>
+    <artifactId>transaction</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>tata</name>
-    <description>tata</description>
+    <name>transaction</name>
+    <description>transaction</description>
     <url/>
     <licenses>
         <license/>
